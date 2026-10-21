@@ -1,0 +1,12 @@
+"RUN SAME DIRECTORY OF POWERSHELL IN WHICH ORIGINAL FILE STORED"
+$inputFile = "Online Retail DATA ANALYTICS - Copy.csv"
+$outputFile = "online_retail_utf8.csv"
+
+$content = [System.IO.File]::ReadAllText($inputFile)
+[System.IO.File]::WriteAllText(
+    $outputFile,
+    $content,
+    [System.Text.UTF8Encoding]::new($false)
+)
+
+Write-Host "Conversion completed: $outputFile"
