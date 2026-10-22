@@ -1,0 +1,43 @@
+# Jupyter Notebook
+.ipynb_checkpoints/
+*/.ipynb_checkpoints/
+
+# Python cache files
+__pycache__/
+*.py[cod]
+*$py.class
+
+# Virtual environments
+venv/
+.venv/
+env/
+
+# Environment variables and secrets
+.env
+.env.*
+!.env.example
+
+# Jupyter configuration
+.jupyter/
+
+# Temporary files
+*.tmp
+*.log
+.DS_Store
+Thumbs.db
+
+# IDE settings
+.vscode/
+.idea/
+
+# Optional: Ignore large datasets (uncomment if needed)
+# data/
+# datasets/
+# *.csv
+# *.xlsx
+# *.parquet
+
+# Optional: Python test and coverage files
+.pytest_cache/
+.coverage
+htmlcov/
